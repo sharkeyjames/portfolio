@@ -5,11 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "build:delete": "rm -rf ./dist",
     "lint": "ng lint",
-    "e2e": "ng e2e",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "scully:serve": "scully serve",
+    "scully:scan": "scully -- --scanRoutes",
+    "serve": "npm run build:delete && npm run build && npm run scully:scan && npm run scully:serve"
   },
   "private": true,
   "dependencies": {
