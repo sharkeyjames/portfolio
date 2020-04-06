@@ -1,0 +1,37 @@
+<ng-container *ngIf="project">
+  <a *ngIf="project.location" class="card" [ngClass]="type" target="_blank" rel="noreferrer" [href]="project.location">
+    <div class="info">
+      <div class="status" [ngClass]="project.status_colour">
+        {{project.status}}
+      </div>
+      <div class="date">
+        {{project.date | date: 'MMMM, y'}}
+      </div>
+    </div>
+    <h2 class="heading">
+      {{project.heading}}
+    </h2>
+    <p class="description">
+      {{project.description}}
+    </p>
+    <div class="circle"></div>
+  </a>
+
+  <a *ngIf="!project.location" class="card" [ngClass]="type">
+    <div class="info">
+      <div class="status" [ngClass]="project.status_colour">
+        {{project.status}}
+      </div>
+      <div class="date">
+        {{project.date | date: 'MMMM, y'}}
+      </div>
+    </div>
+    <h2 class="heading">
+      {{project.heading}}
+    </h2>
+    <p class="description">
+      {{project.description}}
+    </p>
+    <div class="circle"></div>
+  </a>
+</ng-container>

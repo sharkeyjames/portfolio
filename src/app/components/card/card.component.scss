@@ -1,0 +1,137 @@
+@import "../../../assets/scss/colours.scss";
+
+.card {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 10px 25px -10px rgba(72, 29, 99, .3);
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        border: 2px solid $highlight;
+        background-color: white;
+        transform: translate(0px, -3px);
+
+        &:before {
+            height: calc(100% + 2rem + 4px + 3px);
+        }
+    }
+
+    .circle {
+        position: absolute;
+        left: -2.5rem;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -8px;
+        border: 3px solid white;
+        border-radius: 15px;
+        background-color: $highlight;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(-2.5rem + 11.5px);
+        height: calc(100% + 2rem + 4px);
+        width: 4px;
+        background: $background;
+        transition: height 250ms ease-in-out;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .date {
+            font-size: 16px;
+            margin-right: 1rem;
+            color: $highlight;
+            font-weight: 500;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 0rem 0.5rem;
+            border-radius: 2px;
+            background-color: $highlight;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &.green {
+                background-color: $green;
+            }
+
+            &.orange {
+                background-color: $orange;
+            }
+
+            &.red {
+                background-color: $red;
+            }
+        }
+    }
+
+    .heading {
+        color: $black;
+        font-size: 1.5rem;
+        line-height: 1.75;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .description {
+        margin: 0;
+        color: rgba(47, 44, 54, .8);
+        font-size: 1rem;
+        line-height: 1.75;
+        font-weight: 500;
+    }
+}
+
+.first,
+.last {
+    &:before {
+        height: calc((100% + 2rem + 4px)/ 2);
+    }
+
+    &:hover {
+        &:before {
+            height: calc(((100% + 2rem + 4px)/2) + 3px);
+        }
+    }
+}
+
+.first {
+    &:before {
+        top: calc(50% + 15px + 3px);
+    }
+}
+
+.last {
+    &:before {
+        top: 0;
+    }
+
+    &.first {
+        &:before {
+            height: 0;
+        }
+
+        &:hover {
+            &:before {
+                height: 0;
+            }
+        }
+    }
+}
