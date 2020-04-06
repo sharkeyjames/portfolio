@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ScullyRoutesService} from '@scullyio/ng-lib';
-import {Observable} from 'rxjs';
+import { Project } from '../models/project';
+import { ProjectService } from '../services/project/project.service';
+import { Observable, from } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +9,14 @@ import {Observable} from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public links$: Observable<any> = this.scully.available$;
 
-  constructor(private scully: ScullyRoutesService) {}
+  public projects: Project[] = [];
 
-  ngOnInit(): void {
-    // debug current pages
-    this.links$.subscribe(links => {
-      console.log(links);
-    });
+  constructor(private service: ProjectService) { }
+
+  async ngOnInit(): Promise<void> {
+    this.service.init();
+    this.projects = await this.service.getProjects();
   }
 
 }
