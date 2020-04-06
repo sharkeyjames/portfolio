@@ -1,0 +1,3 @@
+<div *ngIf="projects" class="list">
+  <app-card *ngFor="let project of projects; let i = index" [type]="getCardType(i)" [project]=project></app-card>
+</div>
