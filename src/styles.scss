@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/fonts.scss";
+@import "./assets/scss/colours.scss";
+
+* {
+    font-family: 'avenir';
+    color: $black;
+}
+
+strong {
+    font-family: 'avenir-bold';
+}
+
+body {
+    margin: 0;
+    background-color: #f7fbfb;
+}
