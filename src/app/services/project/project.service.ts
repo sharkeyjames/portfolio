@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { Project } from '../../models/project'
 import { first, filter, timeout } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
