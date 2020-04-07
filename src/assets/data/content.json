@@ -23,6 +23,22 @@
       "status_colour": "green",
       "description": "The Worldpay graduates site is a really clean design that was nice to work on and also included some fun features such as the card reader on the landing page.",
       "link": "https://graduates.worldpay.com/"
+    },
+    {
+      "heading": "Worldpay Graduates",
+      "date": "April 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "The Worldpay graduates site is a really clean design that was nice to work on and also included some fun features such as the card reader on the landing page.",
+      "link": "https://graduates.worldpay.com/"
+    },
+    {
+      "heading": "Colt Careers",
+      "date": "August 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "This site involved an integration with SAP Success Factors to pull the vacancies data for the apply page. The apply page also implements searching vacancies, and query parameters.",
+      "link": "https://careers.colt.net/"
     }
   ]
 }
