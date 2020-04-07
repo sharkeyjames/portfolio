@@ -4,9 +4,10 @@ backend:
 media_folder: "src/assets/images"
 collections:
   - name: "projects"
+    identifier_field: "name"
     label: "Projects"
     folder: "src/assets/data"
-    create: false
+    create: true
     delete: false
     editor:
       preview: false
