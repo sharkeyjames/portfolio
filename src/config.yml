@@ -1,19 +1,15 @@
 backend:
   name: git-gateway
   branch: feature/netlify-cms # Branch to update (optional; defaults to master)
-media_folder: "src/assets/images/uploads"
-media_library:
-  name: uploadcare
-  config:
-    publicKey: demopublickey
+media_folder: "src/assets/images"
 collections:
   - name: "projects"
     label: "Projects"
-    folder: "src/assets/data/projects"
+    folder: "src/assets/data"
     create: false
     delete: false
     editor:
-      preview: true
+      preview: false
     format: json
     slug: "projects"
     summary: "Projects"
@@ -22,5 +18,9 @@ collections:
         name: "projects"
         widget: "list"
         fields:
-          - { label: "Client", name: "client", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
+          - { name: "date", widget: "string" }
+          - { name: "status", widget: "string" }
+          - { name: "status_colour", widget: "string" }
+          - { name: "heading", widget: "string" }
+          - { name: "description", widget: "string" }
+          - { name: "location", widget: "string" }
