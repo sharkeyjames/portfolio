@@ -27,10 +27,9 @@ export class ProjectService {
   }
 
   private async loadProjects() {
-    const url = `${environment.api}/projects`;
-    const projects = await this.http.get<Project[]>(url).toPromise();
-    console.log(projects);
-    this.projects$.next(projects);
+    const url = `${environment.api}/content.json`;
+    const content: { projects: Project[]} = await this.http.get<{ projects: Project[]}>(url).toPromise();
+    this.projects$.next(content.projects);
   }
 
 }
