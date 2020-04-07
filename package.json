@@ -14,8 +14,8 @@
     "serve": "npm run rebuild && npm run scully:scan && npm run scully:serve",
     "serve:http": "npx http-server ./dist/static",
     "copy:config": "cp ./config.yml ./dist/static",
-    "everything": "npm run rebuild && npm run scully:scan && npm run copy:config && npm run serve:http",
-    "bundle": "npm run build && npm run scully:scan && npm run copy:config"
+    "everything": "npm run rebuild && npm run scully:scan && npm run serve:http",
+    "bundle": "npm run build && npm run scully:scan"
   },
   "private": true,
   "dependencies": {
