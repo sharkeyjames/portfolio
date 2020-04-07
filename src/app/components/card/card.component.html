@@ -1,5 +1,5 @@
 <ng-container *ngIf="project">
-  <a *ngIf="project.location" class="card" [ngClass]="type" target="_blank" rel="noreferrer" [href]="project.location">
+  <a *ngIf="project.link" class="card" [ngClass]="type" target="_blank" rel="noreferrer" [href]="project.link">
     <div class="info">
       <div class="status" [ngClass]="project.status_colour">
         {{project.status}}
@@ -17,7 +17,7 @@
     <div class="circle"></div>
   </a>
 
-  <a *ngIf="!project.location" class="card" [ngClass]="type">
+  <a *ngIf="!project.link" class="card" [ngClass]="type">
     <div class="info">
       <div class="status" [ngClass]="project.status_colour">
         {{project.status}}
