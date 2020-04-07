@@ -3,25 +3,25 @@ backend:
   branch: feature/netlify-cms # Branch to update (optional; defaults to master)
 media_folder: "src/assets/images"
 collections:
-  - name: "projects"
+  - name: "content"
     identifier_field: "name"
-    label: "Projects"
+    label: "Site content"
     folder: "src/assets/data"
-    create: true
-    delete: false
+    create: false
+    delete: true
     editor:
       preview: false
     format: json
-    slug: "projects"
-    summary: "Projects"
+    slug: "content"
+    summary: "Content for the site"
     fields:
       - label: "Projects"
         name: "projects"
         widget: "list"
         fields:
+          - { name: "heading", widget: "string" }
           - { name: "date", widget: "string" }
           - { name: "status", widget: "string" }
           - { name: "status_colour", widget: "string" }
-          - { name: "heading", widget: "string" }
           - { name: "description", widget: "string" }
-          - { name: "location", widget: "string" }
+          - { name: "link", widget: "string" }
