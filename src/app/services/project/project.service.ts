@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { Project } from '../../models/project'
 import { first, filter, timeout } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
@@ -27,10 +27,9 @@ export class ProjectService {
   }
 
   private async loadProjects() {
-    const url = `${environment.api}/projects`;
-    const projects = await this.http.get<Project[]>(url).toPromise();
-    console.log(projects);
-    this.projects$.next(projects);
+    const url = `${environment.api}/content.json`;
+    const content: { projects: Project[]} = await this.http.get<{ projects: Project[]}>(url).toPromise();
+    this.projects$.next(content.projects);
   }
 
 }

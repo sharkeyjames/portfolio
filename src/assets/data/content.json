@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "date": "June 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "heading": "This site!",
+      "description": "A fun little PWA built with Angular. Take a look at the code over on my github!",
+      "link": "http://jamessharkey.co.uk/"
+    },
+    {
+      "heading": "Paws Careers",
+      "date": "April 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "This was a really fun little site to work on! It had a really nice and easy ATS integration with Lever, I wish more clients used Lever!",
+      "link": "https://paws.madebywiser.com"
+    },
+    {
+      "heading": "Travelex Engineering Careers",
+      "date": "April 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "The Worldpay graduates site is a really clean design that was nice to work on and also included some fun features such as the card reader on the landing page.",
+      "link": "https://graduates.worldpay.com/"
+    },
+    {
+      "heading": "Worldpay Graduates",
+      "date": "April 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "The Worldpay graduates site is a really clean design that was nice to work on and also included some fun features such as the card reader on the landing page.",
+      "link": "https://graduates.worldpay.com/"
+    },
+    {
+      "heading": "Colt Careers",
+      "date": "August 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "This site involved an integration with SAP Success Factors to pull the vacancies data for the apply page. The apply page also implements searching vacancies, and query parameters.",
+      "link": "https://careers.colt.net/"
+    }
+  ]
+}

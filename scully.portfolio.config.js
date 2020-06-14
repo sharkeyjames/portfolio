@@ -3,5 +3,6 @@ exports.config = {
   projectName: "portfolio",
   outDir: './dist/static',
   routes: {
-  }
+  },
+  extraRoutes: [ '/admin' ]
 };

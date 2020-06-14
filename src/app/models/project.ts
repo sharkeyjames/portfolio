@@ -4,5 +4,5 @@ export interface Project {
     status_colour: 'green' | 'red' | 'orange';
     heading: string;
     description: string;
-    location: string | undefined | null;
+    link: string | undefined | null;
 }

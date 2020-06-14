@@ -6,11 +6,16 @@
     "start": "ng serve",
     "build": "ng build",
     "build:delete": "rm -rf ./dist",
+    "rebuild": "npm run build:delete && npm run build",
     "lint": "ng lint",
     "scully": "scully",
     "scully:serve": "scully serve",
     "scully:scan": "scully -- --scanRoutes",
-    "serve": "npm run build:delete && npm run build && npm run scully:scan && npm run scully:serve"
+    "serve": "npm run rebuild && npm run scully:scan && npm run scully:serve",
+    "serve:http": "npx http-server ./dist/static",
+    "copy:config": "cp ./config.yml ./dist/static",
+    "everything": "npm run rebuild && npm run scully:scan && npm run serve:http",
+    "bundle": "npm run build && npm run scully:scan"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +30,7 @@
     "@scullyio/init": "0.0.23",
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
+    "netlify-cms": "^2.10.39",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

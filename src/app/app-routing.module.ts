@@ -7,6 +7,10 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
   },
+  {
+    path: 'admin',
+    loadChildren: () => import('./netlify-cms/netlify-cms.module').then(m => m.NetlifyCMSModule),
+  },
 ];
 
 @NgModule({
