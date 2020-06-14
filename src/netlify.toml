@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://sharkeyjames.com"
+  to = "https://www.jamessharkey.co.uk"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.sharkeyjames.com"
+  to = "https://www.jamessharkey.co.uk"
+  status = 301
+  force = true
