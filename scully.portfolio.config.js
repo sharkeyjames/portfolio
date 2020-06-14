@@ -4,5 +4,5 @@ exports.config = {
   outDir: './dist/static',
   routes: {
   },
-  extraRoutes: [ '/admin' ]
+  extraRoutes: [ '/admin', '/sitemap.xml', '/robots.txt' ]
 };
