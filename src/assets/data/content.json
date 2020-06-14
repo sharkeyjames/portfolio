@@ -39,6 +39,14 @@
       "status_colour": "green",
       "description": "This site involved an integration with SAP Success Factors to pull the vacancies data for the apply page. The apply page also implements searching vacancies, and query parameters.",
       "link": "https://careers.colt.net/"
+    },
+    {
+      "heading": "Lastminute.com and lm group careers",
+      "status": "Live",
+      "status_colour": "green",
+      "link": "https://careers.lastminute.com/",
+      "description": "A bold design and dynamically populating job pages. Everything ran smooth except for the video headers...",
+      "date": "January 17, 2020 03:24:00"
     }
   ]
 }
