@@ -1,14 +1,6 @@
 {
   "projects": [
     {
-      "date": "June 17, 2019 03:24:00",
-      "status": "Live",
-      "status_colour": "green",
-      "heading": "This site!",
-      "description": "A fun little PWA built with Angular. Take a look at the code over on my github!",
-      "link": "https://github.com/sharkeyjames/portfolio"
-    },
-    {
       "heading": "Lloyds Early Careers",
       "date": "September 17, 2019 03:24:00",
       "status": "Live",
@@ -47,6 +39,14 @@
       "link": "https://careers.lastminute.com/",
       "description": "A bold design and dynamically populating job pages. Everything ran smooth except for the video headers...",
       "date": "January 17, 2020 03:24:00"
+    },
+    {
+      "date": "June 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "heading": "This site!",
+      "description": "A static Angular site?! Built using Angular + Scully with netlify cms for content.",
+      "link": "https://github.com/sharkeyjames/portfolio"
     },
     {
       "heading": "ChipChop",
