@@ -47,6 +47,14 @@
       "link": "https://careers.lastminute.com/",
       "description": "A bold design and dynamically populating job pages. Everything ran smooth except for the video headers...",
       "date": "January 17, 2020 03:24:00"
+    },
+    {
+      "heading": "ChipChop",
+      "date": "June 17, 2020 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "My first solo freelance project! A simple static and enquiry form with great lighthouse scores!",
+      "link": "https://www.chipchop.services/"
     }
   ]
 }
