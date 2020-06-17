@@ -1,20 +1,20 @@
 {
   "projects": [
     {
+      "heading": "Knight Frank Erly Careers",
+      "status": "Live",
+      "status_colour": "green",
+      "link": "https://knightfrankearlycareers.com/",
+      "date": "March 17, 2020 03:24:00",
+      "description": "No ATS integration for this one, but a bold design system to advance Knight Frank's brand guidelines makes this site stand out."
+    },
+    {
       "heading": "Lloyds Early Careers",
       "date": "September 17, 2019 03:24:00",
       "status": "Live",
       "status_colour": "green",
       "description": "The clean design and thoughtful touches made this site a joy to work on. It has been shortlisted for a handful of awards... fingers crossed!",
       "link": "https://lloydsemergingtalent.com/"
-    },
-    {
-      "heading": "Travelex Engineering Careers",
-      "date": "April 17, 2019 03:24:00",
-      "status": "Live",
-      "status_colour": "green",
-      "description": "This site had some really exciting design aspects that were a nice challenge to implement!",
-      "link": "https://engineering.travelex.io/"
     },
     {
       "heading": "Worldpay Graduates",
@@ -49,20 +49,20 @@
       "link": "https://github.com/sharkeyjames/portfolio"
     },
     {
+      "heading": "Travelex Engineering Careers",
+      "date": "April 17, 2019 03:24:00",
+      "status": "Live",
+      "status_colour": "green",
+      "description": "This site had some really exciting design aspects that were a nice challenge to implement!",
+      "link": "https://engineering.travelex.io/"
+    },
+    {
       "heading": "ChipChop",
       "date": "June 17, 2020 03:24:00",
       "status": "Live",
       "status_colour": "green",
       "description": "My first solo freelance project! A simple static and enquiry form with great lighthouse scores!",
       "link": "https://www.chipchop.services/"
-    },
-    {
-      "heading": "Knight Frank Erly Careers",
-      "status": "Live",
-      "status_colour": "green",
-      "link": "https://knightfrankearlycareers.com/",
-      "date": "March 17, 2020 03:24:00",
-      "description": "No ATS integration for this one, but a bold design system to advance Knight Frank's brand guidelines makes this site stand out."
     }
   ]
 }
