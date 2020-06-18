@@ -19,8 +19,8 @@
     {
       "heading": "Worldpay Graduates",
       "date": "April 17, 2019 03:24:00",
-      "status": "Live",
-      "status_colour": "green",
+      "status": "Closed",
+      "status_colour": "red",
       "description": "The Worldpay graduates site is a really clean design that was nice to work on and also included some fun features such as the card reader on the landing page.",
       "link": "https://graduates.worldpay.com/"
     },
