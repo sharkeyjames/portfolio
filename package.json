@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod --aot",
     "build:delete": "rm -rf ./dist",
     "rebuild": "npm run build:delete && npm run build",
     "lint": "ng lint",
@@ -15,7 +16,7 @@
     "serve:http": "npx http-server ./dist/static",
     "copy:config": "cp ./config.yml ./dist/static",
     "everything": "npm run rebuild && npm run scully:scan && npm run serve:http",
-    "bundle": "npm run build && npm run scully:scan"
+    "bundle": "npm run build:prod && npm run scully:scan"
   },
   "private": true,
   "dependencies": {
